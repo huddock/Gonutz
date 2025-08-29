@@ -1,34 +1,16 @@
-// This file contains JavaScript code for interactive features of the website.
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("orderForm");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const addToCartButtons = document.querySelectorAll('.add-to-cart');
-    const cartCount = document.getElementById('cart-count');
+  if (form) {
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // prevent real submit for now
 
-    let cart = [];
+      const name = document.getElementById("name").value;
+      const flavour = document.getElementById("flavour").value;
+      const qty = document.getElementById("quantity").value;
 
-    addToCartButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const donutId = this.dataset.id;
-            const donutName = this.dataset.name;
-            const donutPrice = this.dataset.price;
-
-            addToCart(donutId, donutName, donutPrice);
-            showConfetti();
-        });
+      alert(`Thanks, ${name}! 🎉 Your order of ${qty} ${flavour}(s) has been received!`);
+      form.reset();
     });
-
-    function addToCart(id, name, price) {
-        const item = { id, name, price };
-        cart.push(item);
-        updateCartCount();
-    }
-
-    function updateCartCount() {
-        cartCount.textContent = cart.length;
-    }
-
-    function showConfetti() {
-        // Placeholder for confetti animation
-        alert('Yay! Donut added to cart! 🎉');
-    }
+  }
 });

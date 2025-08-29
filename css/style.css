@@ -1,131 +1,23 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #ffcccb, #ffeb3b);
-    color: #333;
+.order-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-header {
-    background-color: #ff6f61;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.order-form input, 
+.order-form select, 
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
 }
-
-header h1 {
-    font-size: 2.5rem;
-    color: white;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffeb3b;
-}
-
-.hero {
-    background-image: url('../images/donut-placeholder-1.svg');
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.btn-order {
-    background-color: #ffeb3b;
-    color: #ff6f61;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-}
-
-.btn-order:hover {
-    transform: scale(1.05);
-    background-color: #ffcccb;
-}
-
-.featured-donuts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.donut-card {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.donut-card:hover {
-    transform: translateY(-5px);
-}
-
-.donut-card img {
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-}
-
-.donut-card h3 {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.donut-card p {
-    text-align: center;
-    color: #ff6f61;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #ff6f61;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    color: #ffeb3b;
-}
-
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .btn-order {
-        font-size: 1.2rem;
-    }
+.order-form button {
+  margin-top: 15px;
+  width: 100%;
 }
