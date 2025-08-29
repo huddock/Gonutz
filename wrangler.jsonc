@@ -1,0 +1,7 @@
+{
+  "name": "donut-delivery-website",
+  "compatibility_date": "2025-08-29",
+  "assets": {
+    "directory": "./dist"
+  }
+}
