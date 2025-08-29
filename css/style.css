@@ -1,23 +1,120 @@
-.order-form {
-  max-width: 400px;
+/* Typography & base colors */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fdf6f8;
+  color: #333;
+}
+
+/* Header */
+.crumbl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffb6c1;
+  padding: 1rem 2rem;
+}
+.logo {
+  height: 50px;
+}
+.site-name {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.8rem;
+}
+.nav-links a {
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.crumbl-hero {
+  background: linear-gradient(135deg, #ffccd5, #ffb6c1);
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #fff;
+}
+.crumbl-hero .hero-inner {
+  max-width: 600px;
   margin: 0 auto;
-  text-align: left;
+}
+.crumbl-hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.crumbl-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.btn-primary {
+  background: white;
+  color: #ff4d6d;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* Rotating Flavors Grid */
+.flavor-grid {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.flavor-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.flavor-card:hover {
+  transform: translateY(-5px);
+}
+.flavor-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.flavor-card h3 {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+}
+
+/* Why Section */
+.why-section {
   background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem 1rem;
+  text-align: center;
 }
-.order-form input, 
-.order-form select, 
-.order-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 1rem;
+.why-section h2 {
+  font-size: 1.8rem;
 }
-.order-form button {
-  margin-top: 15px;
-  width: 100%;
+.why-section p {
+  color: #555;
+}
+
+/* Contact & Footer */
+.contact {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer {
+  background: #ffb6c1;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
